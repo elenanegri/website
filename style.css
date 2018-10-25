@@ -97,6 +97,9 @@ a{
   left: 30%;
     opacity: 0;
 }
+.insta{
+  width: 4%; float: left; margin-right: 1%;
+}
 
 
 @media only screen 
@@ -105,7 +108,7 @@ a{
   and (-webkit-min-device-pixel-ratio: 2) { 
 .n{
   font-family: 'helvetica neue';
-  font-size: 1.6em;
+  font-size: 1.8em;
     font-weight: normal;
   float: left;
   margin-left: 0.5%;
