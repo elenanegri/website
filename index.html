@@ -1,37 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="style.css" />
 	<title> Elena Negri Photo </title>
-<link rel="icon" href="camera.ico" type="image/ico" sizes="16x16">
-<script type="text/javascript">
-	
-	$(document).ready(function(){
-  $(window).click(function(){
-    $('#img02').css('opacity',1);
-  });
-});
-</script>
+	<link rel="icon" href="camera.ico" type="image/ico" sizes="16x16">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
+	</script>
+	<script>
+		$(document).ready(function() {
+			$(window).click(function() {
+				$('#img02').css('opacity', 1);
+				console.log('clicked');
+			});
+		});
+		$(document).ready(function() {
+			$(window).click(function() {
+				$('#img03').css('opacity', 1);
+				console.log('clicked');
+			});
+		});
+		$(document).ready(function() {
+			$(window).click(function() {
+				$('#img04').css('opacity', 1);
+				console.log('clicked');
+			});
+		});
+		$(document).ready(function() {
+			$(window).click(function() {
+				$('#img05').css('opacity', 1);
+				console.log('clicked');
+			});
+		});
+		$(document).ready(function() {
+			$(window).click(function() {
+				$('#img06').css('opacity', 1);
+				console.log('clicked');
+			});
+		});
+	</script>
+
 </head>
+
 <body class="first">
 
-<div class="info">
-	<p class="n"> Elena Negri Photographer,</p>
-	<p class="n"> <a href="info.html"> Info. </a> </p> 
+	<div class="info">
+		<p class="n"> Elena Negri Photographer,</p>
+		<p class="n"> <a href="info.html"> Info. </a> </p>
+	</div>
 
-</div> 
+	<div class="photo">
+		<img src="01.jpg" id="img01">
+		<img src="02.jpg" id="img02">
+		<img src="03.jpg" id="img03">
+		<img src="04.jpg" id="img04">
+		<img src="05.jpg" id="img05">
+		<img src="06.jpg" id="img06">
 
-<div class="photo">
-<img src="01.jpg" id="img01">
-<img src="02.jpg" id="img02">
-<img src="03.jpg" id="img03">
-<img src="04.jpg" id="img04">
-<img src="05.jpg" id="img05">
-<img src="06.jpg" id="img06">
-
-</div>
-
+	</div>
 
 
 
 </body>
+
+</html>
