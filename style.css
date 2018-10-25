@@ -106,16 +106,17 @@ a{
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+
 .n{
   font-family: 'helvetica neue';
-  font-size: 1.8em;
+  font-size: 2.2em;
     font-weight: normal;
   float: left;
   margin-left: 0.5%;
 }
 
 .insta{
-  width: 8%; float: left; margin-right: 1%;
+  width: 10%; float: left; margin-right: 1%;
 }
 
 
