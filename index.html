@@ -7,51 +7,8 @@
 	<link rel="icon" href="camera.ico" type="image/ico" sizes="16x16">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js">
 	</script>
-	<script>
-		$(document).ready(function() {
-			$(window).click(function() {
-				$('#img02').css('opacity', 1);
-				$('#img01').css('opacity', 0);
-				console.log('clicked');
-			});
-		});
-	</script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$(window).click(function() {
-				$('#img03').css('opacity', 1);
-				$('#img02').css('opacity', 0);
-				console.log('clicked');
-			});
-		});
-		</script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-			$(window).click(function() {
-				$('#img04').css('opacity', 1);
-				$('#img03').css('opacity', 0);
-				console.log('clicked');
-			});
-		});
-		</script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-			$(window).click(function() {
-				$('#img05').css('opacity', 1);
-				$('#img04').css('opacity', 0);
-				console.log('clicked');
-			});
-		});
-		</script>
-		<script type="text/javascript">
-		$(document).ready(function() {
-			$(window).click(function() {
-				$('#img06').css('opacity', 1);
-				$('#img05').css('opacity', 0);
-				console.log('clicked');
-			});
-		});
-	</script>
+	
+	
 
 </head>
 
@@ -73,6 +30,36 @@
 	</div>
 
 
+
+<script type="text/javascript">
+		imgs = document.getElementsByTagName('img');
+
+		function hideImages(){
+			for (var i = 0; i < imgs.length; i++) {
+				imgs[i].classList.add('hidden');
+				imgs[i].classList.remove('active');
+
+			}
+		}
+
+		$(document).ready(function(){
+			counter = 0;
+			$(window).click(function(){
+				hideImages();
+				imgs[counter].classList.add('active');
+				counter++;
+				if (counter >= imgs.length) {
+					counter = 0;
+				}
+				console.log(counter)
+			});
+
+
+		});
+
+		
+
+	</script>
 
 </body>
 

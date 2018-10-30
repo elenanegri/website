@@ -44,13 +44,30 @@ a{
 .active {
   opacity: 1;
 }
+
+img {
+  opacity:1.0;
+}
+
+img:nth-child(5){
+  /*transform:rotate(40deg);*/
+}
+
 #img01{
   width: 20%;
   height: auto;
   position: absolute;
   top:15%;
   left: 3%;
-  opacity: 1;
+
+}
+
+img{
+  opacity:0.0;
+}
+
+.hidden{
+opacity: 0.0;
 }
 
 #img02{
@@ -59,7 +76,10 @@ a{
   position: absolute;
   top:2%;
   left: 40%;
-  opacity: 0;
+
+}
+.active{
+  opacity:1.0;
 }
 
 #img03{
@@ -68,7 +88,7 @@ a{
   position: absolute;
   top: 15%;
   left: 70%;
-  opacity: 0;
+
 }
 
 #img04{
@@ -77,7 +97,7 @@ a{
   position: absolute;
   top:20%;
   left: 60%;
-  opacity: 0;
+
 }
 
 #img05{
@@ -86,7 +106,7 @@ a{
   position: absolute;
   top:5%;
   left: 20%;
-    opacity: 0;
+
 }
 
 #img06{
@@ -95,7 +115,7 @@ a{
   position: absolute;
   top:10%;
   left: 30%;
-    opacity: 0;
+
 }
 .insta{
   width: 4%; float: left; margin-right: 1%;
